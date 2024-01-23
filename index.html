@@ -39,6 +39,7 @@
 </head>
 
 <body class="font-manrope">
+  <!-- header section -->
   <header class="max-w-6xl mx-auto">
     <!-- navbar section -->
     <div class="navbar bg-base-100">
@@ -73,14 +74,15 @@
         </ul>
       </div>
       <div class="navbar-end gap-6">
-        <a href="/searchbar"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="/searchbar"><i class="fa-solid fa-magnifying-glass  hidden lg:inline-flex"></i></a>
         <a class="btn bg-btn-color text-white px-6 py-4">Get Ticket</a>
       </div>
     </div>
     <!-- banner section -->
-    <section>
+    <section class="relative lg:mb-0 lg:pb-0">
       <div>
         <div class="carousel w-full mt-10">
+          <!-- slider - 1 -->
           <div id="slide1" class="carousel-item relative w-full lg:h-[550px]">
             <img src="./Images/1.png" class="w-full" />
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -88,6 +90,7 @@
               <a href="#slide2" class="btn bg-black text-white btn-circle">❯</a>
             </div>
           </div>
+          <!-- slider - 2 -->
           <div id="slide2" class="carousel-item relative w-full lg:h-[550px]">
             <img src="./Images/hockey banner.jpg" class="w-full rounded-lg" />
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -95,6 +98,7 @@
               <a href="#slide3" class="btn bg-black text-white btn-circle">❯</a>
             </div>
           </div>
+          <!-- slider - 3 -->
           <div id="slide3" class="carousel-item relative w-full lg:h-[550px]">
             <img src="./Images/hockey banner 3.jpg" class="w-full rounded-lg" />
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -104,13 +108,18 @@
           </div>
         </div>
       </div>
+          <div class="text-white relative bg-black h-[150px] lg:h-[20%] left-0
+               lg:left-[670px] lg:p-2 rounded lg:w-[450px] text-center lg:-top-48 px-3">
+               <h3 class="text-[16px] lg:text-2xl font-bold">The World Cup of Hockey Games</h3>
+               <p>This World cup was rendered in 2023.Our team had won this world cup.Every players was our junior program group who are won the world cup.</p>
+         </div>
     </section>
   </header>
+  <!-- main section -->
   <main class=" max-w-6xl mx-auto">
     <!-- professional hockey club section -->
-    <section class="mt-20">
-      <hr>
-      <div>
+    <section>
+      <div class="border-t-2 border-b-2 border-dashed">
         <h2 class="text-4xl font-extrabold text-center mt-5">Professional Hockeys Club
         </h2>
         <p class="text-text-color w-5/6 lg:w-3/5 mx-auto text-center mt-3 mb-5 ">
@@ -118,7 +127,6 @@
           game.There have lot of professional hockey coach.
         </p>
       </div>
-      <hr>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-10">
         <!-- player facility -->
         <div class="text-center">
@@ -156,34 +164,35 @@
           <p class="text-text-color w-5/6 mx-auto">A number of people who are trainer in this club</p>
         </div>
       </div>
-      <hr class="mt-8">
     </section>
     <!-- Program Sections starts -->
     <section class="mt-20">
-      <h2 class="text-4xl font-extrabold text-center mt-5">Program Section</h2>
+      <div class="border-t-2 border-b-2 border-dashed mb-10">
+        <h2 class="text-4xl font-extrabold text-center mt-5">Program Section</h2>
       <p class="text-text-color w-5/6 lg:w-3/5 mx-auto text-center mt-3 mb-5 ">
         There are three types of program.First program is junior program.Second program is Teenager program & last and
         most important program is professional program.
       </p>
-      <hr class="my-5">
+      </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
         <!-- Junior program -->
 
-        <div class="hero h-full lg:h-[600px]" style="background-image: url(./Images/2.png);">
-          <div class="hero-overlay bg-opacity-60"></div>
-          <div class="pl-10 mb-8 lg:mb-0 mt-20 lg:mt-48 text-[#FFF]">
-            <h1 class="mb-5 text-3xl lg:text-5xl font-bold">Junior Program</h1>
-            <p class="mb-5 w-5/6 lg:w-4/6">This is a junior program section.if you want admit this program,you have to
-              complete our requirement.First requirement, you must have within 10 to 15 year old.
-            </p>
-            <button class="btn bg-btn-color text-white px-4 py-4 border-none">Registration Now</button>
+        
+          <div class="hero  h-full lg:h-[600px]  rounded-3xl" style="background-image: url(./Images/2.png);">
+            <div class="hero-overlay bg-opacity-60 rounded-3xl"></div>
+            <div class="pl-5 lg:pl-10 mb-8 lg:mb-0 mt-20 lg:mt-48 text-[#FFF]">
+              <h1 class="mb-5 text-3xl lg:text-5xl font-bold">Junior Program</h1>
+              <p class="mb-5 w-5/6 lg:w-4/6">This is a junior program section.if you want admit this program,you have to
+                complete our requirement.First requirement, you must have within 10 to 15 year old.
+              </p>
+              <button class="btn bg-btn-color text-white px-4 py-4 border-none">Registration Now</button>
+            </div>
           </div>
-        </div>
         <!-- Teenager program -->
 
-        <div class="hero h-full lg:h-[600px]" style="background-image: url(./Images/3.png);">
-          <div class="hero-overlay bg-opacity-60"></div>
-          <div class="pl-10 mb-8 lg:mb-0 mt-20 lg:mt-48 text-[#FFF]">
+        <div class="hero h-full lg:h-[600px] rounded-3xl" style="background-image: url(./Images/3.png);">
+          <div class="hero-overlay bg-opacity-60 rounded-3xl"></div>
+          <div class="pl-5 lg:pl-10 mb-8 lg:mb-0 mt-20 lg:mt-48 text-[#FFF]">
             <h1 class="mb-5 text-3xl lg:text-5xl font-bold">Teenager Program</h1>
             <p class="mb-5 w-5/6 lg:w-4/6">It is a Teenager program.This program is for everyone.if you want admit this
               program,you have to be a our country citizen.
@@ -193,10 +202,10 @@
         </div>
         <!-- Professional program -->
 
-        <div class="hero h-full lg:h-[600px] md:col-span-2 lg:col-span-2"
+        <div class="hero h-full lg:h-[600px] md:col-span-2 lg:col-span-2 rounded-3xl"
           style="background-image: url(./Images/4.png);">
-          <div class="hero-overlay bg-opacity-60"></div>
-          <div class="pl-10 mb-8 lg:mb-0 mt-14 lg:mt-48 text-[#FFF]">
+          <div class="hero-overlay bg-opacity-60 rounded-3xl"></div>
+          <div class="pl-5 lg:pl-10 mb-8 lg:mb-0 mt-14 lg:mt-48 text-[#FFF]">
             <h1 class="mb-2 text-3xl lg:text-5xl font-bold">Professional Program</h1>
             <p class="mb-2 w-5/6 lg:w-4/6">This is our most important program.if you want admit this program,you have to
               complete our our basic program that means junior program also have to a certificate from junior program.
@@ -208,14 +217,14 @@
     </section>
     <!-- Our New Products Sections -->
     <section class="mt-16">
-      <hr>
-      <h2 class="text-4xl font-extrabold text-center mt-5">Our New Products
-      </h2>
-      <p class="text-text-color w-5/6 lg:w-3/5 mx-auto text-center mt-3 mb-5 ">
-        You will have surprised to see our new collection of hockey games cloth.We are included every peace of hockey
-        game dress.So don't yet come fast and buy every dress of hockey game from our shop.
-      </p>
-      <hr>
+      <div class="border-t-2 border-b-2 border-dashed">
+        <h2 class="text-4xl font-extrabold text-center mt-5">Our New Products
+        </h2>
+        <p class="text-text-color w-5/6 lg:w-3/5 mx-auto text-center mt-3 mb-5 ">
+          You will have surprised to see our new collection of hockey games cloth.We are included every peace of hockey
+          game dress.So don't yet come fast and buy every dress of hockey game from our shop.
+        </p>
+      </div>
       <br>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
         <!-- first product  -->
@@ -345,7 +354,6 @@
         </p>
       </div>
       <!-- questions -->
-      <hr class="mt-8">
       <div class="flex flex-col md:flex-row lg:flex-row gap-10 mt-10 border rounded p-8">
         <div>
           <img src="./Images/11.png" alt="">
